@@ -1,0 +1,122 @@
+/* Se crean estilos globales que posteriormente se van a heredar */
+body {
+  font-family: Arial;
+  background-color: bisque;
+  margin: 0px;
+}
+
+a {
+  /* Se elimina del tag 'a' el subrayado */
+  text-decoration: none;
+  /* Y hacemos que sean de color negro */
+  color: #000;
+}
+
+.titulo-sitio {
+  /* Clase principal */
+  font-size: 50px;
+  text-align: center;
+}
+
+.titulo-sitio span {
+  /* Herencia en titulo y cambio en span */
+  /* Este es el estilo que le da al titulo de "Juegos" */
+  font-family: "Bungee Spice", sans-serif;
+}
+
+.contenedor-nav {
+  /* Esto es para centrarlo y se pueda crear la separacion del titulo y 
+    la barra de navegacion
+    */
+  border-top: 1px solid #000;
+}
+
+.nav-principal {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Efecto para que al colocar el cursor sobre la etiqueta "a" */
+/* Este efecto se le llama 'hover' */
+/* Y se le indica que estilos se le van a aplicar cuando pase el cursor sobre el elemento */
+/* Se implementa colocando dos puntos ':' seguido de la palabra 'hover' */
+.nav-principal a:hover {
+  color: white;
+  background-color: coral;
+}
+
+.contenedor {
+  /*  Esto significa que el elemento no se ensanchará más allá de 120 unidades de medida de ancho */
+  max-width: 120rem;
+  /*  Esta propiedad de CSS se utiliza para centrar horizontalmente el elemento en su contenedor padre */
+  margin-inline: auto;
+}
+
+/* Seccion de imagenes */
+.content {
+  /* Establece el número de columnas que se usarán para el diseño de 
+  las cajas con la clase "content". En este caso, se configuran 4 columnas. */
+  columns: 4;
+  /* Esta propiedad se utiliza para controlar cómo se deben manejar los saltos de 
+  página dentro de los elementos con la clase "content". "Avoid" significa que se 
+  debe evitar que el contenido se divida en dos columnas */
+  break-inside: avoid;
+  /* Establece el espacio entre las columnas en elementos con la clase "content". 
+  En este caso, el espacio entre columnas es de 1.5 rem (unidades de medida) */
+  column-gap: 1.5rem;
+  padding-top: 7rem;
+  margin: 0rem 10rem;
+}
+.card-image {
+  /* Se establece como "relative", lo que permite posicionar elementos 
+  secundarios en relación con este elemento */
+  position: relative;
+  /* Define los bordes que seran redondeados con 15 píxeles */
+  border-radius: 15px;
+}
+.card-image:hover {
+  /*  Reduce la opacidad del elemento a 0.8 cuando el cursor está 
+  sobre él, lo que hace que el elemento sea un poco más transparente */
+  opacity: 0.8;
+}
+.gallery-img {
+  /* Establece el ancho máximo del elemento al 100% del contenedor, lo que 
+  hace que la imagen no se ensanche más allá de su contenedor */
+  max-width: 100%;
+  margin-bottom: 1rem;
+  /* Define el elemento como un bloque, lo que significa que ocupará todo 
+  el ancho disponible y tendrá saltos de línea antes y después de él */
+  display: block;
+  border-radius: 15px;
+}
+
+/* Seccion del footer */
+.site-footer {
+  border-top: 1px solid #000;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+.site-footer h3 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.flex-footer div {
+  margin-bottom: 2rem;
+}
+
+.footer-menu a {
+  display: block;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.copyright {
+  margin-top: 5rem;
+  text-align: center;
+}
